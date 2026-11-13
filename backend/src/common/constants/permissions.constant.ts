@@ -1,0 +1,19 @@
+// PRD §4.2 Owner/Manager-Controlled Permissions Checklist
+export enum Permission {
+  CREATE_BILLS = 'CREATE_BILLS',
+  VIEW_PRODUCTS = 'VIEW_PRODUCTS',
+  ADD_EDIT_PRODUCTS = 'ADD_EDIT_PRODUCTS',
+  UPDATE_STOCK = 'UPDATE_STOCK',
+  VIEW_SALES_REPORTS = 'VIEW_SALES_REPORTS',
+  VIEW_PROFIT_REPORTS = 'VIEW_PROFIT_REPORTS',
+  MANAGE_STAFF = 'MANAGE_STAFF',
+  SHOP_SETTINGS = 'SHOP_SETTINGS',
+}
+
+export const ALL_PERMISSIONS = Object.values(Permission);
+
+export const DEFAULT_STAFF_PERMISSIONS = [
+  Permission.CREATE_BILLS,
+  Permission.VIEW_PRODUCTS,
+];
+
